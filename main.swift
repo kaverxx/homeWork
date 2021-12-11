@@ -11,7 +11,7 @@ struct Queue<T> {
     
     private var people = [T]()
     
-    mutating func EnableToQueue(newPeople: T) {
+    mutating func enableToQueue(newPeople: T) {
         return people.append(newPeople)
     }
     
@@ -30,10 +30,11 @@ struct Queue<T> {
 
 var queueToCinema = Queue<People>()
 
-queueToCinema.EnableToQueue(newPeople: .init(name: "alex", age: 19, gender: "man"))
-queueToCinema.EnableToQueue(newPeople: .init(name: "beth", age: 27, gender: "woman"))
-queueToCinema.EnableToQueue(newPeople: .init(name: "ithan", age: 24, gender: "man"))
-queueToCinema.EnableToQueue(newPeople: .init(name: "aaron", age: 15, gender: "man"))
+queueToCinema.enableToQueue(newPeople: .init(name: "alex", age: 19, gender: "man"))
+queueToCinema.enableToQueue(newPeople: .init(name: "beth", age: 27, gender: "woman"))
+queueToCinema.enableToQueue(newPeople: .init(name: "ithan", age: 24, gender: "man"))
+queueToCinema.enableToQueue(newPeople: .init(name: "aaron", age: 15, gender: "man"))
+queueToCinema.enableToQueue(newPeople: .init(name: "lisa" , age: 21, gender: "woman"
 
 queueToCinema.disableFromQueueFirst()
 queueToCinema.disableFromQueueLast()
